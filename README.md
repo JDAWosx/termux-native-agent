@@ -65,6 +65,19 @@ Edit the generated `config.json` file:
 
 *Note: On first run, Android will request permissions for Microphone, Phone, and SMS. You must grant these for the agent to function.*
 
+## ⚡ Experimental Go Version (Google ADK)
+For users seeking higher performance and type safety, we have included an experimental implementation using the [Google Agent Development Kit (ADK)](https://google.golang.org/adk).
+
+**Requirements:**
+*   Go 1.24+ installed (`pkg install golang`)
+*   `GOOGLE_API_KEY` environment variable set (Gemini API).
+
+**Running the Go Agent:**
+```bash
+export GOOGLE_API_KEY="your-gemini-key"
+./run_go.sh console
+```
+
 ## 🛡️ Security & Disclaimer
 * **Cost:** Using cloud APIs (OpenAI) incurs costs. Check your usage limits.
 * **Safety:** The run_shell tool gives the LLM access to your Termux shell. While it cannot access root (unless your device is rooted), it can modify files within the Termux scope. Use with caution.
