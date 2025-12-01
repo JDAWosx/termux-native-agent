@@ -68,6 +68,14 @@ Edit the generated `config.json` file:
 ## ⚡ Experimental Go Version (Google ADK)
 For users seeking higher performance and type safety, we have included an experimental implementation using the [Google Agent Development Kit (ADK)](https://google.golang.org/adk).
 
+**🚀 SOTA Features (Go Version Only):**
+*   **👁️ Multimodal Vision:** The agent can "see" the world. It snaps a photo using the device camera and uses Gemini Vision to analyze it.
+    *   *Try:* "What is in front of me?" or "Read this document."
+*   **🔗 App Deep Linking:** The agent can launch apps and perform actions.
+    *   *Try:* "Open Spotify", "Navigate to Paris on Maps", "Search for cats on YouTube".
+*   **🧠 Long-term Memory:** The agent can store and recall facts across sessions.
+    *   *Try:* "Remember that my door code is 1234" -> (Restart) -> "What is my door code?"
+
 **Requirements:**
 *   Go 1.24+ installed (`pkg install golang`)
 *   `GOOGLE_API_KEY` environment variable set (Gemini API).
